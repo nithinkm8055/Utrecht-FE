@@ -1,0 +1,1 @@
+@Library(['stpl-pipeline-fe']) _ def config = [:] frontendSTPL(config)
