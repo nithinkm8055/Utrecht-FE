@@ -12,8 +12,19 @@
         <div class="tab">
           <label class="tab-label" for="chck1">{{productDetail.productName}}</label>
           <div class="tab-content">
-            <p>
-              {{productDetail.productDescription}}
+            <p *ngIf=product.accountNumber>
+              Account Number: {{product.accountNumber}}
+            </p>
+             <p *ngIf=product.limit>
+               Limit: {{product.limit}}
+             </p>
+             <p *ngIf=product.remainingMortgage>
+               Remaining Mortgage: {{product.remainingMortgage}}
+             </p>
+              <p *ngIf=product.totalAmount>
+                Balance: {{product.totalAmount}}
+              </p>
+              <p *ngIf=productDetail.productDescription>{{productDetail.productDescription}}
             </p>
             <table>
               <thead>
@@ -52,7 +63,7 @@
               </tbody>
             </table>
 
-            <p>
+            <p *ngIf=productDetail.productDescription>
              {{productDetail.productDescription}}
             </p>
           </div>

@@ -1,6 +1,6 @@
-                                        import { ProductCategory, ProductDetails } from './interfaces/product.interface';
+import { ProductCategory, ProductDetails } from './interfaces/product.interface';
 
-export const API_END_POINT = 'https:host/';
+export const API_END_POINT = 'http://3.10.215.129:8080';
 
 export const ALL_PRODUCTS:ProductCategory [] = [
     {
@@ -38,17 +38,17 @@ export const ALL_PRODUCTS:ProductCategory [] = [
 export const PRODUCT_DETAILS: ProductDetails []= [{
     productCategory: 'Mortage',
     productName: 'Banking Saving Mortage',
-    productCode: 'banking_mortage',
+    productCode: '1',
     productDescription:'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reicien'
 }, {
         productCategory: 'Mortage',
         productName: 'Interest Only',
-        productCode: 'interest_only',
+        productCode: '2',
         productDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reicien'
     }, {
         productCategory: 'Payment',
         productName: 'Payment Account',
-        productCode: 'payments_account',
+        productCode: '3',
         productDescription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reicien'
     }, {
         productCategory: 'Mortage',

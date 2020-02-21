@@ -9,15 +9,19 @@ import { ProductsService } from '../../services/products.service';
 })
 export class CustomerOverviewComponent implements OnInit {
   allProducts = [];
+  product ;
 
   constructor(private service: ProductsService) {
-   }
+  }
 
   ngOnInit() {
     this.getAllProducts();
   }
 
   getAllProducts() {
-    this.allProducts = this.service.getAllProducts();
+
+    this.service.getProducts().subscribe((res: any) => {
+      this.allProducts = res.productGroups;
+    });
   }
 }

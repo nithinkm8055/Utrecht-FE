@@ -9,9 +9,11 @@
       <div class="tabs">
         <div class="tab" *ngFor="let allProduct of allProducts;  let i= index">
           <input type="checkbox" id="{{'chck'+i}}">
-          <label class="tab-label" for="{{'chck'+i}}">{{allProduct.productCategory +'('+ allProduct.products.length + ')'}} </label>
+          <label class="tab-label" for="{{'chck'+i}}">{{allProduct.name +'('+ allProduct.products.length + ')'}}
+          </label>
           <div class="tab-content" *ngFor="let product of allProduct.products">
-            <span class="material-icons"> keyboard_arrow_right </span> <a href="{{product.link}}">
+            <span class="material-icons"> keyboard_arrow_right </span> <a
+              href="/product-overview?product={{product.id}}">
               {{product.name}}
             </a>
           </div>

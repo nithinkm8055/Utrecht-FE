@@ -9,6 +9,7 @@ import { ProductsService } from '../../services/products.service';
 })
 export class ProductOverviewComponent implements OnInit {
   productDetail;
+  product = {};
   constructor(private service: ProductsService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
@@ -20,6 +21,9 @@ export class ProductOverviewComponent implements OnInit {
   }
 
   loadProduct(product: string) {
-    this.productDetail = this.service.getProductDetail(product);
+    this.service.getProductDetail(product).subscribe((res) => {
+     this.product  = res;
+    });
+    this.productDetail = this.service.getProduct(product);
   }
 }
